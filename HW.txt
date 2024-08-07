@@ -1,0 +1,35 @@
+Необхідно написати HTTP клієнт на Go, який буде обробляти всі запити зі списку нижче:
+	GET /hello
+	GET /api/v1/rick
+	GET /api/v1/say (+query "name")
+	GET /api/v1/searchBooks (+query "title" and "author" )
+	answer:
+		type Book struct {
+    		title string`
+    		author string
+		}
+		type BookResponse struct {
+   			status string
+    		books  []Book
+		}
+	POST /api/v1/register
+name (string)
+password (string)
+	POST /api/v1/calculate
+first_num (float64)
+second_num (float64)
+action (string)
+addition
+subtraction
+multiplication
+division
+	POST /api/v1/translateText
+text (string)
+sourceLanguage (string) f.e. "en"
+targetLanguage (string) f.e. "ua"
+    	answer:
+status (string)
+translatedText (string)
+Сайт: https://sayaku2.alwaysdata.net/
+Формат здачі: Посилання на Pull request з окремими функціями під кожен запит в папці в репозиторії з валідною обробкою результатів.
+За додатковий бал зробіть скріншоти результатів виконання з тілом кожного з запитів через Postman, ThunderClient або їх аналоги.
